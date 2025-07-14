@@ -64,22 +64,41 @@ body {
   font-weight: 500;
 }
 
-.nav-button button {
-  margin-left: 20px;
-  padding: 8px 16px;
+.nav-button .login-btn {
   background-color: orangered;
   color: black;
   border: 2px black solid;
-
+  margin-left: 20px;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+.nav-button .login-btn:hover {
+  color: white;
+  border: 2px white solid;
   cursor: pointer;
   border-radius: 10px;
   font-size: 1.2em;
   font-weight: 600;
 }
 
-.nav-button button:hover {
+.nav-button .signup-btn {
+  background-color:rgb(46, 222, 43);
+  color: black;
+  border: 2px black solid;
+  margin-left: 20px;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.nav-button .signup-btn:hover {
   color: white;
-  border: 2px white solid;
+  border: 2px  white solid;
   cursor: pointer;
   border-radius: 10px;
   font-size: 1.2em;

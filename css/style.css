@@ -7,6 +7,7 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
+  max-height: 100vh;
 }
 
 .nav-logo {
@@ -104,3 +105,10 @@ body {
   font-size: 1.2em;
   font-weight: 600;
 }
+
+@media(max-width:900px){
+  .navbar{
+    display: inline-flex;
+  }
+}
+

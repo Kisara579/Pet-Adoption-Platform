@@ -7,6 +7,7 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
+  /* background-color:#d7d7d7; */
   max-height: 100vh;
 }
 
@@ -86,7 +87,7 @@ body {
 }
 
 .nav-button .signup-btn {
-  background-color:rgb(46, 222, 43);
+  background-color: rgb(46, 222, 43);
   color: black;
   border: 2px black solid;
   margin-left: 20px;
@@ -99,16 +100,68 @@ body {
 
 .nav-button .signup-btn:hover {
   color: white;
-  border: 2px  white solid;
+  border: 2px white solid;
   cursor: pointer;
   border-radius: 10px;
   font-size: 1.2em;
   font-weight: 600;
 }
 
-@media(max-width:900px){
-  .navbar{
+@media (max-width: 900px) {
+  .navbar {
     display: inline-flex;
   }
 }
 
+.main-header h1 {
+  text-align: center;
+  margin: 70px 0;
+  color: orangered;
+  font-size: 4em;
+}
+
+.main-header .boxes {
+  text-align: center;
+}
+.main-header .boxes img {
+  display: inline-block;
+  margin: 20px 10px;
+  width: 20vh;
+  height: 20vh;
+}
+
+.boxes .dog-box {
+  position: relative;
+  display: inline-flex;
+}
+
+.boxes .cat-box {
+  position: relative;
+  display: inline-flex;
+}
+
+.boxes .other-box {
+  position: relative;
+  display: inline-flex;
+}
+
+.boxes a {
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: 600;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 30px;
+  margin: 20px 40px;
+  color: black;
+  background-color: rgb(237, 237, 237);
+  border: 5px black solid;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
+
+.boxes a:hover {
+  color: blue;
+  border: 5px blue solid;
+  background-color: white;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0);
+}

@@ -250,3 +250,49 @@ body {
   border-radius: 30px;
   cursor: pointer;
 }
+
+
+.cards .cat-cards {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin:50px;
+}
+.cards .cat-cards .cat-details {
+  margin: 100px;
+  line-height: 1.5;
+  font-size: 1.6em;
+  border: 2px black solid;
+  border-radius: 10px;
+  background-color: rgb(189, 189, 189, 0.5);
+  padding: 20px;
+}
+.cards .cat-cards img {
+  border: 4px blue solid;
+  border-radius: 20px;
+  width: 50vh;
+}
+.cards .cat-cards img:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+}
+
+.cards .cat-cards p {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: left;
+  color: red;
+}
+
+.cards .cat-cards span {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: blue;
+}
+
+.cards .cat-cards button {
+  font-size: 0.6em;
+  font-weight: bold;
+  padding: 10px;
+  background-color: greenyellow;
+  color: black;
+  border-radius: 30px;
+  cursor: pointer;
+}

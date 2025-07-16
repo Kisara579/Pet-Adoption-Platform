@@ -199,6 +199,7 @@ body {
   text-align: center;
   background-color: black;
   padding-bottom: 20px;
+  width: 100%;
 }
 .footer p {
   margin-top: 50px;
@@ -351,3 +352,139 @@ body {
   border-radius: 30px;
   cursor: pointer;
 }
+
+
+.login-form{
+  background-color:rgb(195, 195, 195);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 60vh;
+  border: 5px black solid;
+}
+.login-form h2{
+  color: black;
+  font-size: 3em;
+  position: relative;
+  margin: 20px auto;
+}
+
+.login-form p{
+  color: black;
+  font-size: 1.2em;
+  font-weight:500;
+  margin-bottom: 10px;
+}
+
+.login-form p a{
+  text-decoration: none;
+  color: blue;
+}
+
+.login-form .input-bar{
+  padding: 20px 0;
+}
+
+.login-form input{
+  border: 3px black solid;
+  padding: 15px 60px;
+  border-radius: 30px;
+  background-color: white;
+  color: black;
+}
+
+.login-form input::placeholder{
+  color: blue;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+.login-form .sumbit-btn-login{
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: orangered;
+  font-size: 1.2em;
+  padding: 10px;
+  margin-top: 20px;
+  font-weight: 600;
+  color: black;
+  border: none;
+}
+
+.login-form .sumbit-btn-login:hover{
+  background-color: black;
+  border: 3px red solid;
+  color: red;
+}
+
+
+.signup-form{
+  background-color:rgb(195, 195, 195);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border: 5px black solid;
+}
+.signup-form h2{
+  color: black;
+  font-size: 3em;
+  position: relative;
+  margin: 20px auto;
+}
+
+.signup-form p{
+  color: black;
+  font-size: 1.2em;
+  font-weight:500;
+  margin-bottom: 10px;
+}
+
+.signup-form p a{
+  text-decoration: none;
+  color: blue;
+}
+
+.signup-form .input-bar{
+  padding: 20px 0;
+}
+
+.signup-form input{
+  border: 3px black solid;
+  padding: 15px 70px;
+  border-radius: 30px;
+  background-color: white;
+  color: black;
+}
+
+.signup-form input::placeholder{
+  color: blue;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+.signup-form .sumbit-btn-signup{
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: orangered;
+  font-size: 1.2em;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-weight: 600;
+  color: black;
+  border: none;
+}
+
+.signup-form .sumbit-btn-signup:hover{
+  background-color: black;
+  border: 3px red solid;
+  color: red;
+}
+
+
+

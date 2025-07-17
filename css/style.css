@@ -355,13 +355,17 @@ body {
 
 
 .login-form{
-  background-color:rgb(195, 195, 195);
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 60vh;
+}
+
+.login-box{
   border: 5px black solid;
+  background-color:rgb(195, 195, 195);
+  padding: 40px;
+  box-shadow: 5px 5px 10px rgb(86, 86, 86);
 }
 .login-form h2{
   color: black;
@@ -421,13 +425,17 @@ body {
 
 
 .signup-form{
-  background-color:rgb(195, 195, 195);
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 100%;
+}
+
+.signup-box{
   border: 5px black solid;
+  background-color:rgb(195, 195, 195);
+  padding: 50px;
+  box-shadow: 5px 5px 10px rgb(86, 86, 86);
 }
 .signup-form h2{
   color: black;

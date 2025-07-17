@@ -392,10 +392,11 @@ body {
 
 .login-form input{
   border: 3px black solid;
-  padding: 15px 60px;
+  padding: 15px 20px;
   border-radius: 30px;
   background-color: white;
   color: black;
+  width: 100%;
 }
 
 .login-form input::placeholder{
@@ -462,10 +463,11 @@ body {
 
 .signup-form input{
   border: 3px black solid;
-  padding: 15px 70px;
+  padding: 15px 30px;
   border-radius: 30px;
   background-color: white;
   color: black;
+  width: 100%;
 }
 
 .signup-form input::placeholder{

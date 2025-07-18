@@ -34,22 +34,24 @@
       <div class="signup-box">
         <h2>SignUp</h2>
         <p>Already Have an Account ? <a href="./login.html">Login</a></p>
-        <form action="./login.html" method="post">
+        <form action="./login.html" method="post" id="signup-form">
           <div class="input-bar">
             <input
               type="text"
               name="name"
               placeholder="Enter your Name"
-              required
+              id="signup-name"
             />
+            <div class="small-signup"></div>
           </div>
           <div class="input-bar">
             <input
               type="email"
               name="email"
               placeholder="Enter your Email"
-              required
+              id="signup-email"
             />
+            <div class="small-signup"></div>
           </div>
 
           <div class="input-bar">
@@ -57,8 +59,9 @@
               type="text"
               name="address"
               placeholder="Enter your Address"
-              required
+              id="signup-address"
             />
+            <div class="small-signup"></div>
           </div>
 
           <div class="input-bar">
@@ -66,16 +69,20 @@
               type="tel"
               name="phone"
               placeholder="Enter your Phone Number"
-              required
+              id="signup-number"
             />
+            <div class="small-signup"></div>
           </div>
+
           <div class="input-bar">
             <input
               type="password"
               name="password1"
               placeholder="Enter your Password"
-              required
+              id="signup-password1"
             />
+
+            <div class="small-signup"></div>
           </div>
 
           <div class="input-bar">
@@ -83,8 +90,9 @@
               type="password"
               name="password2"
               placeholder="Confirm your Password"
-              required
+              id="signup-password2"
             />
+            <div class="small-signup"></div>
           </div>
 
           <input

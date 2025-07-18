@@ -399,6 +399,7 @@ body {
   width: 100%;
 }
 
+
 .login-form input::placeholder{
   color: blue;
   font-family: sans-serif;
@@ -422,6 +423,25 @@ body {
   background-color: black;
   border: 3px red solid;
   color: red;
+}
+
+/* login page validation styles */
+
+.login-form .success-login{
+  border: 4px rgb(46, 222, 43) solid;
+}
+.login-form .error-login{
+  border: 4px red solid;
+}
+.login-form .small-login{
+  color: red;
+  margin-top: 10px;
+  font-family: sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  position: relative;
+  left: 20px;
+  width: 100%;
 }
 
 

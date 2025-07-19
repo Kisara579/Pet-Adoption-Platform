@@ -114,12 +114,15 @@ if (signup_form) {
       password2valid_signup
     ) {
       if (
-        signup_form.elements["signup-password1"].value ===
+        signup_form.elements["signup-password1"].value !==
         signup_form.elements["signup-password2"].value
       ) {
-        alert("Register Successfully");
+        showError_Signup(
+          signup_form.elements["signup-password2"],
+          "Passwords do not match"
+        );
       } else {
-        alert("Password doesn't Match");
+        alert("Signup Successfully");
       }
     }
   });

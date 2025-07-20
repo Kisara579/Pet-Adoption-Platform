@@ -12,8 +12,6 @@ body {
   width: 100%;
 }
 
-
-
 .navbar {
   display: flex;
   align-items: center;
@@ -27,7 +25,6 @@ body {
   width: 100vw;
   z-index: 1000;
 }
-
 
 .nav-logo {
   display: flex;
@@ -47,8 +44,8 @@ body {
   top: 5px;
   cursor: pointer;
 }
-.nav-logo h1:hover{
-  color:blue;
+.nav-logo h1:hover {
+  color: blue;
 }
 
 .navbar ul {
@@ -267,12 +264,11 @@ body {
   cursor: pointer;
 }
 
-
 .cards .cat-cards {
   display: flex;
   justify-content: left;
   align-items: center;
-  margin:50px;
+  margin: 50px;
 }
 .cards .cat-cards .cat-details {
   margin: 100px;
@@ -313,12 +309,11 @@ body {
   cursor: pointer;
 }
 
-
 .cards .other-cards {
   display: flex;
   justify-content: left;
   align-items: center;
-  margin:50px;
+  margin: 50px;
 }
 .cards .other-cards .other-details {
   margin: 100px;
@@ -359,45 +354,44 @@ body {
   cursor: pointer;
 }
 
-
-.login-form{
+.login-form {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
 
-.login-box{
+.login-box {
   border: 5px black solid;
-  background-color:rgb(195, 195, 195);
+  background-color: rgb(195, 195, 195);
   padding: 40px;
   box-shadow: 5px 5px 10px rgb(86, 86, 86);
   border-radius: 20px;
 }
-.login-form h2{
+.login-form h2 {
   color: black;
   font-size: 3em;
   position: relative;
   margin: 20px auto;
 }
 
-.login-form p{
+.login-form p {
   color: black;
   font-size: 1.2em;
-  font-weight:500;
+  font-weight: 500;
   margin-bottom: 10px;
 }
 
-.login-form p a{
+.login-form p a {
   text-decoration: none;
   color: blue;
 }
 
-.login-form .input-bar{
+.login-form .input-bar {
   padding: 20px 0;
 }
 
-.login-form input{
+.login-form input {
   outline: none;
   border: 3px black solid;
   padding: 15px 20px;
@@ -407,18 +401,17 @@ body {
   width: 100%;
 }
 
-.login-form .input:focus{
+.login-form .input:focus {
   outline: none;
-
 }
 
-.login-form input::placeholder{
+.login-form input::placeholder {
   color: blue;
   font-family: sans-serif;
   font-weight: 600;
 }
 
-.login-form .sumbit-btn-login{
+.login-form .sumbit-btn-login {
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -431,7 +424,7 @@ body {
   border: none;
 }
 
-.login-form .sumbit-btn-login:hover{
+.login-form .sumbit-btn-login:hover {
   background-color: black;
   border: 3px red solid;
   color: red;
@@ -439,13 +432,13 @@ body {
 
 /* login page validation styles */
 
-.login-form .success-login{
+.login-form .success-login {
   border: 4px rgb(46, 222, 43) solid;
 }
-.login-form .error-login{
+.login-form .error-login {
   border: 4px red solid;
 }
-.login-form .small-login{
+.login-form .small-login {
   color: orangered;
   margin-top: 10px;
   font-family: sans-serif;
@@ -456,45 +449,44 @@ body {
   width: 100%;
 }
 
-
-.signup-form{
+.signup-form {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
 
-.signup-box{
+.signup-box {
   border: 5px black solid;
-  background-color:rgb(195, 195, 195);
+  background-color: rgb(195, 195, 195);
   padding: 50px;
   box-shadow: 5px 5px 10px rgb(86, 86, 86);
   border-radius: 20px;
 }
-.signup-form h2{
+.signup-form h2 {
   color: black;
   font-size: 3em;
   position: relative;
   margin: 20px auto;
 }
 
-.signup-form p{
+.signup-form p {
   color: black;
   font-size: 1.2em;
-  font-weight:500;
+  font-weight: 500;
   margin-bottom: 10px;
 }
 
-.signup-form p a{
+.signup-form p a {
   text-decoration: none;
   color: blue;
 }
 
-.signup-form .input-bar{
+.signup-form .input-bar {
   padding: 20px 0;
 }
 
-.signup-form input{
+.signup-form input {
   outline: none;
   border: 3px black solid;
   padding: 15px 30px;
@@ -503,17 +495,17 @@ body {
   color: black;
   width: 100%;
 }
-.signup-form input:focus{
+.signup-form input:focus {
   outline: none;
 }
 
-.signup-form input::placeholder{
+.signup-form input::placeholder {
   color: blue;
   font-family: sans-serif;
   font-weight: 600;
 }
 
-.signup-form .sumbit-btn-signup{
+.signup-form .sumbit-btn-signup {
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -527,7 +519,7 @@ body {
   border: none;
 }
 
-.signup-form .sumbit-btn-signup:hover{
+.signup-form .sumbit-btn-signup:hover {
   background-color: black;
   border: 3px red solid;
   color: red;
@@ -535,13 +527,13 @@ body {
 
 /* signup page validation styles */
 
-.signup-form .success-signup{
+.signup-form .success-signup {
   border: 4px rgb(46, 222, 43) solid;
 }
-.signup-form .error-signup{
+.signup-form .error-signup {
   border: 4px red solid;
 }
-.signup-form .small-signup{
+.signup-form .small-signup {
   color: orangered;
   margin-top: 10px;
   font-family: sans-serif;
@@ -552,3 +544,59 @@ body {
   width: 100%;
 }
 
+/* faq */
+
+.faq-box {
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 20px;
+  background-color: rgb(164, 164, 164);
+  border-radius: 20px;
+  width: 50vw;
+}
+
+.faq-box h1 {
+  text-align: center;
+  padding: 10px;
+  font-size: 2em;
+  color: blue;
+  margin: 10px;
+  margin-bottom: 10px;
+}
+
+.faq-box .faq-questions {
+  display: flex;
+  padding-bottom: 5px;
+  border-bottom: 2px black solid;
+  cursor: pointer;
+  justify-content: space-between;
+}
+
+.faq-box .faq-questions .faq-icon {
+  text-align: right;
+  font-size: 2em;
+  padding-right: 10px;
+}
+.faq-icon .plus {
+  color: blue;
+}
+
+.faq-icon .minus {
+  color: blue;
+  display: none;
+}
+
+.faq-answers {
+  overflow: hidden;
+  max-height: 0;
+}
+.faq-answers p {
+  font-size: 1.1em;
+  line-height: 1.2;
+  color:black;
+}
+
+.faq-questions.active .faq-answers {
+  max-height: 300px;
+  animation: fade 1s ease-in-out;
+}

@@ -38,7 +38,7 @@ if (login_form) {
       PASSWORD_REQUIRED_LOGIN
     );
 
-    if (emailvalid && passwordvalid) {
+    if (emailvalid_login && passwordvalid_login) {
       alert("Login Successfully");
     }
   });

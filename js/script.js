@@ -127,3 +127,29 @@ if (signup_form) {
     }
   });
 }
+
+
+
+
+//faq
+document.addEventListener("DOMContentLoaded", function () {
+    const faqs = document.querySelectorAll(".faq-box .faq-questions");
+
+    faqs.forEach(faq => {
+        faq.addEventListener("click", () => {
+            faq.classList.toggle("active");
+
+            const plusIcon = faq.querySelector(".plus");
+            const minusIcon = faq.querySelector(".minus");
+
+            if (faq.classList.contains("active")) {
+                plusIcon.style.display = "none";
+                minusIcon.style.display = "inline";
+            } else {
+                plusIcon.style.display = "inline";
+                minusIcon.style.display = "none";
+            }
+        });
+    });
+});
+

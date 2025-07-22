@@ -128,28 +128,49 @@ if (signup_form) {
   });
 }
 
-
-
-
 //faq
 document.addEventListener("DOMContentLoaded", function () {
-    const faqs = document.querySelectorAll(".faq-box .faq-questions");
+  const faqs = document.querySelectorAll(".faq-box .faq-questions");
 
-    faqs.forEach(faq => {
-        faq.addEventListener("click", () => {
-            faq.classList.toggle("active");
+  faqs.forEach((faq) => {
+    faq.addEventListener("click", () => {
+      faq.classList.toggle("active");
 
-            const plusIcon = faq.querySelector(".plus");
-            const minusIcon = faq.querySelector(".minus");
+      const plusIcon = faq.querySelector(".plus");
+      const minusIcon = faq.querySelector(".minus");
 
-            if (faq.classList.contains("active")) {
-                plusIcon.style.display = "none";
-                minusIcon.style.display = "inline";
-            } else {
-                plusIcon.style.display = "inline";
-                minusIcon.style.display = "none";
-            }
-        });
+      if (faq.classList.contains("active")) {
+        plusIcon.style.display = "none";
+        minusIcon.style.display = "inline";
+      } else {
+        plusIcon.style.display = "inline";
+        minusIcon.style.display = "none";
+      }
     });
+  });
 });
 
+//search bar dog page
+document.addEventListener("DOMContentLoaded", () => {
+  const searchBoxDog = document.getElementById("search-box-dog");
+
+  const searchButtonDog = document.getElementById("search-btn-dog");
+
+  searchButtonDog.addEventListener("click", () => {
+    const searchValue = searchBoxDog.value.toLowerCase();
+    console.log("Search input:", searchValue);
+
+    const cardsDog = document.querySelectorAll(".cards .dog-cards");
+    console.log(cardsDog);
+
+    cardsDog.forEach((card) => {
+      const content = card.textContent.toLowerCase();
+
+      if (content.includes(searchValue)) {
+        card.style.display = "flex";
+      } else {
+        card.style.display = "none";
+      }
+    });
+  });
+});

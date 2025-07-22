@@ -153,24 +153,107 @@ document.addEventListener("DOMContentLoaded", function () {
 //search bar dog page
 document.addEventListener("DOMContentLoaded", () => {
   const searchBoxDog = document.getElementById("search-box-dog");
-
   const searchButtonDog = document.getElementById("search-btn-dog");
+  const searchMessage = document.querySelector(".search-message");
+
+  searchBoxDog.addEventListener("keypress", (event) => {
+    if (event.key === "Enter") {
+      searchButtonDog.click();
+    }
+  });
 
   searchButtonDog.addEventListener("click", () => {
     const searchValue = searchBoxDog.value.toLowerCase();
-    console.log("Search input:", searchValue);
-
     const cardsDog = document.querySelectorAll(".cards .dog-cards");
-    console.log(cardsDog);
+
+    let count = 0;
 
     cardsDog.forEach((card) => {
       const content = card.textContent.toLowerCase();
 
       if (content.includes(searchValue)) {
+        count++;
         card.style.display = "flex";
       } else {
         card.style.display = "none";
       }
     });
+    if (count === 0) {
+      searchMessage.style.display = "block";
+    } else {
+      searchMessage.style.display = "none";
+    }
+  });
+});
+
+// search bar cat page
+document.addEventListener("DOMContentLoaded", () => {
+  const searchBoxCat = document.getElementById("search-box-cat");
+  const searchButtonCat = document.getElementById("search-btn-cat");
+  const searchMessage = document.querySelector(".search-message");
+
+  searchBoxCat.addEventListener("keypress", (event) => {
+    if (event.key === "Enter") {
+      searchButtonCat.click();
+    }
+  });
+
+  searchButtonCat.addEventListener("click", () => {
+    const searchValue = searchBoxCat.value.toLowerCase();
+    const cardsCat = document.querySelectorAll(".cards .cat-cards");
+
+    let count = 0;
+
+    cardsCat.forEach((card) => {
+      const content = card.textContent.toLowerCase();
+
+      if (content.includes(searchValue)) {
+        count++;
+        card.style.display = "flex";
+      } else {
+        card.style.display = "none";
+      }
+    });
+    if (count === 0) {
+      searchMessage.style.display = "block";
+    } else {
+      searchMessage.style.display = "none";
+    }
+  });
+});
+
+// search bar other page
+document.addEventListener("DOMContentLoaded", () => {
+  const searchBoxOther = document.getElementById("search-box-other");
+  const searchButtonOther = document.getElementById("search-btn-other");
+  const searchMessage = document.querySelector(".search-message");
+
+  searchBoxOther.addEventListener("keypress", (event) => {
+    if (event.key === "Enter") {
+      searchButtonOther.click();
+    }
+  });
+
+  searchButtonOther.addEventListener("click", () => {
+    const searchValue = searchBoxOther.value.toLowerCase();
+    const cardsOther = document.querySelectorAll(".cards .other-cards");
+
+    let count = 0;
+
+    cardsOther.forEach((card) => {
+      const content = card.textContent.toLowerCase();
+
+      if (content.includes(searchValue)) {
+        count++;
+        card.style.display = "flex";
+      } else {
+        card.style.display = "none";
+      }
+    });
+    if (count === 0) {
+      searchMessage.style.display = "block";
+    } else {
+      searchMessage.style.display = "none";
+    }
   });
 });

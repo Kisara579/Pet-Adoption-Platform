@@ -257,3 +257,17 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+//flipped cards
+
+document.addEventListener("DOMContentLoaded", () => {
+  const buttons = document.querySelectorAll(".flip-btn");
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const card = button.closest(".dog-cards");
+      const flipper = card.querySelector(".flipper");
+      flipper.classList.toggle("flipped");
+    });
+  });
+});

@@ -220,12 +220,55 @@ body {
   display: block;
 }
 .cards .dog-cards {
+  position: relative;
+  width: 900px;
+  height: 600px;
   display: flex;
   justify-content: left;
   align-items: center;
   margin: 50px;
+  position: relative;
+  perspective: 1000px;
 }
-.cards .dog-cards .dog-details {
+
+.cards .dog-cards .flipper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+}
+.cards .dog-cards .flipper.flipped {
+  transform: rotateY(180deg);
+}
+
+.dog-cards .front-part,
+.dog-cards .back-part {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.dog-cards .back-part {
+  transform: rotateY(180deg);
+  display: inline;
+  background-color:greenyellow;
+  border-radius: 20px;
+  text-align: left;
+  padding: 100px 50px;
+  line-height: 1.5;
+  font-size: 2em;
+  font-weight: 500;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color: black;
+}
+
+.cards .dog-cards .front-part .dog-details {
   margin: 100px;
   line-height: 1.5;
   font-size: 1.6em;
@@ -234,29 +277,28 @@ body {
   background-color: rgb(189, 189, 189, 0.5);
   padding: 20px;
 }
-.cards .dog-cards img {
+.cards .dog-cards .front-part img {
   border: 4px blue solid;
   border-radius: 20px;
   width: 50vh;
 }
-.cards .dog-cards img:hover {
+.cards .dog-cards .front-part img:hover {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
 }
 
-.cards .dog-cards p {
+.cards .dog-cards .front-part p {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   text-align: left;
   color: red;
 }
 
-.cards .dog-cards span {
+.cards .dog-cards .front-part span {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: blue;
 }
 
-.cards .dog-cards button {
+.cards .dog-cards .front-part button {
   font-size: 0.6em;
-  font-weight: bold;
   padding: 10px;
   background-color: greenyellow;
   color: black;
@@ -264,6 +306,7 @@ body {
   cursor: pointer;
 }
 
+/* cats pages styles */
 .cards .cat-cards {
   display: flex;
   justify-content: left;
@@ -309,6 +352,7 @@ body {
   cursor: pointer;
 }
 
+/* other page styles */
 .cards .other-cards {
   display: flex;
   justify-content: left;

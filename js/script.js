@@ -258,16 +258,30 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-//flipped cards
-
+//flipped cards 
 document.addEventListener("DOMContentLoaded", () => {
   const buttons = document.querySelectorAll(".flip-btn");
+  const backParts = document.querySelectorAll(".back-part");
 
+  // Flip forward 
   buttons.forEach((button) => {
     button.addEventListener("click", () => {
-      const card = button.closest(".dog-cards");
-      const flipper = card.querySelector(".flipper");
-      flipper.classList.toggle("flipped");
+      const card = button.closest(".dog-cards, .cat-cards, .other-cards");
+      if (card) {
+        const flipper = card.querySelector(".flipper");
+        flipper.classList.toggle("flipped");
+      }
+    });
+  });
+
+  // Flip back 
+  backParts.forEach((backPart) => {
+    backPart.addEventListener("click", () => {
+      const card = backPart.closest(".dog-cards, .cat-cards, .other-cards");
+      if (card) {
+        const flipper = card.querySelector(".flipper");
+        flipper.classList.remove("flipped");
+      }
     });
   });
 });

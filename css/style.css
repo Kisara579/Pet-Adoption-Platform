@@ -257,14 +257,14 @@ body {
 .dog-cards .back-part {
   transform: rotateY(180deg);
   display: inline;
-  background-color:greenyellow;
+  background-color: greenyellow;
   border-radius: 20px;
   text-align: left;
   padding: 100px 50px;
   line-height: 1.5;
   font-size: 2em;
   font-weight: 500;
-  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   color: black;
 }
 
@@ -308,12 +308,54 @@ body {
 
 /* cats pages styles */
 .cards .cat-cards {
+  position: relative;
+  width: 900px;
+  height: 500px;
   display: flex;
   justify-content: left;
   align-items: center;
   margin: 50px;
+  position: relative;
+  perspective: 1000px;
 }
-.cards .cat-cards .cat-details {
+.cards .cat-cards .flipper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+}
+.cards .cat-cards .flipper.flipped {
+  transform: rotateY(180deg);
+}
+
+.cat-cards .front-part,
+.cat-cards .back-part {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.cat-cards .back-part {
+  transform: rotateY(180deg);
+  display: inline;
+  background-color: greenyellow;
+  border-radius: 20px;
+  text-align: left;
+  padding: 100px 50px;
+  line-height: 1.5;
+  font-size: 2em;
+  font-weight: 500;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: black;
+}
+
+.cards .cat-cards .front-part .cat-details {
   margin: 100px;
   line-height: 1.5;
   font-size: 1.6em;
@@ -322,29 +364,28 @@ body {
   background-color: rgb(189, 189, 189, 0.5);
   padding: 20px;
 }
-.cards .cat-cards img {
+.cards .cat-cards .front-part img {
   border: 4px blue solid;
   border-radius: 20px;
   width: 50vh;
 }
-.cards .cat-cards img:hover {
+.cards .cat-cards .front-part img:hover {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
 }
 
-.cards .cat-cards p {
+.cards .cat-cards .front-part p {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   text-align: left;
   color: red;
 }
 
-.cards .cat-cards span {
+.cards .cat-cards .front-part span {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: blue;
 }
 
-.cards .cat-cards button {
+.cards .cat-cards .front-part button {
   font-size: 0.6em;
-  font-weight: bold;
   padding: 10px;
   background-color: greenyellow;
   color: black;
@@ -354,12 +395,54 @@ body {
 
 /* other page styles */
 .cards .other-cards {
+  position: relative;
+  width: 900px;
+  height: 550px;
   display: flex;
   justify-content: left;
   align-items: center;
   margin: 50px;
+  position: relative;
+  perspective: 1000px;
 }
-.cards .other-cards .other-details {
+.cards .other-cards .flipper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+}
+.cards .other-cards .flipper.flipped {
+  transform: rotateY(180deg);
+}
+
+.other-cards .front-part,
+.other-cards .back-part {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.other-cards .back-part {
+  transform: rotateY(180deg);
+  display: inline;
+  background-color: greenyellow;
+  border-radius: 20px;
+  text-align: left;
+  padding: 100px 50px;
+  line-height: 1.5;
+  font-size: 2em;
+  font-weight: 500;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: black;
+}
+
+.cards .other-cards .front-part .other-details {
   margin: 100px;
   line-height: 1.5;
   font-size: 1.6em;
@@ -368,35 +451,37 @@ body {
   background-color: rgb(189, 189, 189, 0.5);
   padding: 20px;
 }
-.cards .other-cards img {
+.cards .other-cards .front-part img {
   border: 4px blue solid;
   border-radius: 20px;
   width: 50vh;
 }
-.cards .other-cards img:hover {
+.cards .other-cards .front-part img:hover {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
 }
 
-.cards .other-cards p {
+.cards .other-cards .front-part p {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   text-align: left;
   color: red;
 }
 
-.cards .other-cards span {
+.cards .other-cards .front-part span {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: blue;
 }
 
-.cards .other-cards button {
+.cards .other-cards .front-part button {
   font-size: 0.6em;
-  font-weight: bold;
   padding: 10px;
   background-color: greenyellow;
   color: black;
   border-radius: 30px;
   cursor: pointer;
 }
+
+
+/* login and signup page styles */
 
 .login-form {
   display: flex;
